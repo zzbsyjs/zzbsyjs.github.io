@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zzbsyjs</title>
+    <!-- 引入图标 -->
+    <link rel="shortcut icon" href="dangao2.png" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* css3盒子模型 */
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: #f6f0b2;
+        }
+
+        /* em 和 i 斜体的文字不倾斜 */
+        em,
+        i {
+            font-style: normal
+        }
+
+        /* 去掉li 的小圆点 */
+        li {
+            list-style: none
+        }
+
+        /* 字体声明 这里需要修改路径*/
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?u7aeef');
+            src: url('fonts/icomoon.eot?u7aeef#iefix')format('embedded-opentype'),
+                url('fonts/icomoon.ttf?u7aeef') format('truetype'),
+                url('fonts/icomoon.woff?u7aeef') format('woff'),
+                url('fonts/icomoon.svg?u7aeef#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        body {
+            /* 一定要带url() */
+            background-image: url(hb.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .wenzi {
+            position: absolute;
+            top: 70px;
+            left: 150px;
+            font-size: 30px;
+        }
+        .wenzi span{
+            margin-right: 10px;
+        }
+
+        .wenzi::after {
+            content: "\e904";
+            font-family: 'icomoon';
+            color: lightcoral;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+
+        }
+
+        .bd {
+            margin: 2px auto;
+            width: 560px;
+            height: 30px;
+        }
+
+        .bd .one {
+            float: left;
+            width: 30px;
+            height: 30px;
+            margin-right: 120px;
+        }
+
+        .one img,
+        .two img {
+            overflow: hidden;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .two a {
+            display: block;
+            float: left;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wenzi">
+        <a href="#">
+            <span>HAPPY</span>
+            <span> ZZ'S</span>
+            <span> DAY </sp>
+        </a>
+    </div>
+    <footer>
+        <div class="bd">
+            <ul>
+                <li class="one"><img src="lw.png" alt=""></li>
+                <li class="one"><img src="dg.png" alt=""></li>
+                <li class="one"><img src="hdj (1).png" alt=""></li>
+                <li class="two"><a href="#"><img src="xx.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
